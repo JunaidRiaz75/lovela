@@ -1,0 +1,2 @@
+C:/Projects/lovela/android/app/.cxx/RelWithDebInfo/6z4lr704/x86/CMakeFiles/edit_cache.dir
+C:/Projects/lovela/android/app/.cxx/RelWithDebInfo/6z4lr704/x86/CMakeFiles/rebuild_cache.dir

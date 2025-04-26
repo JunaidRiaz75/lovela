@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lovela/colors.dart';
-import 'package:lovela/screen5.dart';
 import 'package:lovela/screen7.dart';
 
 class Screen6 extends StatefulWidget {

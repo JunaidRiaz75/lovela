@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lovela/colors.dart';
@@ -86,7 +85,7 @@ class _Screen2State extends State<Screen2> {
                                 textStyle: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w700),
                                 color: AppColors.bgDarkest),
-                            //textAlign: TextAlign.left,
+                            textAlign: TextAlign.left,
                           ),
                         ),
                       ),
@@ -101,28 +100,33 @@ class _Screen2State extends State<Screen2> {
                         child: Row(
                           children: [
                             Container(
-                              height: 40,
-                              width: 56,
+                              height: 47,
+                              width: 60,
+                              margin: EdgeInsetsDirectional.only(bottom: 5),
                               decoration: BoxDecoration(
                                   border: Border.all(
                                       color: AppColors.deepRed, width: 1),
                                   borderRadius: BorderRadius.circular(4)),
-                              child: DropdownButton<String>(
-                                borderRadius: BorderRadius.circular(8),
-                                value: selectedCountryCode,
-                                onChanged: (String? newValue) {
-                                  setState(() {
-                                    selectedCountryCode = newValue;
-                                  });
-                                },
-                                items: countryCodes
-                                    .map<DropdownMenuItem<String>>(
-                                        (String code) {
-                                  return DropdownMenuItem<String>(
-                                    value: code,
-                                    child: Text(code),
-                                  );
-                                }).toList(),
+                              child: Center(
+                                child: DropdownButton<String>(
+                                  isExpanded: true,
+                                  underline: SizedBox(),
+                                  borderRadius: BorderRadius.circular(8),
+                                  value: selectedCountryCode,
+                                  onChanged: (String? newValue) {
+                                    setState(() {
+                                      selectedCountryCode = newValue;
+                                    });
+                                  },
+                                  items: countryCodes
+                                      .map<DropdownMenuItem<String>>(
+                                          (String code) {
+                                    return DropdownMenuItem<String>(
+                                      value: code,
+                                      child: Text(code),
+                                    );
+                                  }).toList(),
+                                ),
                               ),
                             ),
                             SizedBox(
@@ -130,7 +134,7 @@ class _Screen2State extends State<Screen2> {
                             ),
                             SizedBox(
                               width: 220,
-                              height: 56,
+                              height: 55,
                               child: TextFormField(
                                 controller: phoneController,
                                 decoration: InputDecoration(
@@ -159,7 +163,7 @@ class _Screen2State extends State<Screen2> {
                                   // Show the country code in the field
                                 ),
                                 keyboardType: TextInputType.phone,
-                                maxLength: 10,
+                                //maxLength: 10,
                               ),
                             ),
                           ],

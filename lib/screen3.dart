@@ -1,11 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lovela/colors.dart';
 import 'package:lovela/screen2.dart';
 import 'package:lovela/screen4.dart';
-import 'package:lovela/screen6.dart';
 
 class Screen3 extends StatefulWidget {
   const Screen3({super.key});

@@ -1,7 +1,7 @@
-/* import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lovela/colors.dart';
-import 'package:lovela/screen8.dart'; // Next screen
+// Next screen
 
 class Screen8 extends StatefulWidget {
   const Screen8({super.key});
@@ -103,10 +103,9 @@ class _Screen8State extends State<Screen8> {
                 ),
               ),
             ),
-          ], /*  */
+          ],
         ),
       ),
     );
   }
 }
- */
