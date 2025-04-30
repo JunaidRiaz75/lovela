@@ -20,7 +20,8 @@ class AppColors {
   static const Color background = Color(0xFFF4EDDD); // #F4EDDD
   static const Color beigeTop = Color(0xFFDCCBBB); // #DCCBBB
 
-  static const Color bgDarkest = Color(0xFF161616); // #161616
+  static const Color bgDarkest = Color(0xFF161616);
+  static const Color bg = Color(0xFF323232); // #161616
   static const Color bgDarker = Color(0xFF393939); // #393939
   static const Color bgDark = Color(0xFF5E5E5E); // #5E5E5E
   static const Color bgMedium = Color(0xFF868686); // #868686

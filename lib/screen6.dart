@@ -209,7 +209,7 @@ class _Screen6State extends State<Screen6> {
                       ),
                     ),
 
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 10),
                     Image.asset(
                       'assets/image4.png',
                       width: 280,

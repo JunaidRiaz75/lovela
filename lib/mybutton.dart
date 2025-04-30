@@ -8,41 +8,35 @@ class CustomButton extends StatelessWidget {
   final Color backgroundColor;
   final VoidCallback onPressed;
   final Color textColor;
-  const CustomButton({
-    super.key,
-    required this.text,
-    this.icon,
-    required this.backgroundColor,
-    required this.textColor,
-    required this.onPressed,
-  });
+  final Text textstyle;
+  const CustomButton(
+      {super.key,
+      required this.text,
+      this.icon,
+      required this.backgroundColor,
+      required this.textColor,
+      required this.onPressed,
+      required TextStyle style,
+      required this.textstyle,
+      required});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        width: 295,
+        width: 320,
         height: 56,
         decoration: BoxDecoration(
           color: backgroundColor,
-          borderRadius: BorderRadius.circular(32),
+          borderRadius: BorderRadius.circular(13),
         ),
         child: Row(
           children: [
-            Container(
-              width: 43,
-              height: 43,
-              margin: EdgeInsets.only(left: 8),
-              decoration: const BoxDecoration(
-                color: Colors.white,
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                icon,
-                color: AppColors.deepRed,
-                size: 24,
-              ),
+            Icon(
+              icon,
+              color: AppColors.deepRed,
+              size: 24,
             ),
             SizedBox(width: 40),
             Text(
