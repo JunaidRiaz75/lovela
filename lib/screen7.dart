@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lovela/colors.dart';
 import 'package:lovela/screen8.dart'; // Next screen
@@ -147,3 +147,4 @@ class _Screen7State extends State<Screen7> {
     );
   }
 }
+ */

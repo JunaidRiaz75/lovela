@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lovela/colors.dart';
 import 'package:lovela/screen3.dart';
@@ -225,3 +225,4 @@ class _Screen2State extends State<Screen2> {
     );
   }
 }
+ */

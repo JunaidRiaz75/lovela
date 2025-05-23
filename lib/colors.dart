@@ -17,7 +17,7 @@ class AppColors {
 
   // New Colors
   static const Color deepRed = Color(0xFF781621); // #781621
-  static const Color background = Color(0xFFF4EDDD); // #F4EDDD
+  static const Color background = Color.fromRGBO(243, 237, 223, 1); // #F4EDDD
   static const Color beigeTop = Color(0xFFDCCBBB); // #DCCBBB
 
   static const Color bgDarkest = Color(0xFF161616);
@@ -27,4 +27,5 @@ class AppColors {
   static const Color bgMedium = Color(0xFF868686); // #868686
   static const Color bgLight = Color(0xFFB0B0B0); // #B0B0B0
   static const Color bgLightest = Color(0xFFDDDDDD); // #DDDDDD
+  static const Color b = Color(0x99323232);
 }

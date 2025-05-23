@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lovela/colors.dart';
 import 'package:lovela/mybutton.dart';
+import 'package:lovela/signup.dart';
 
 class Newscr1 extends StatefulWidget {
   const Newscr1({super.key});
@@ -14,7 +15,7 @@ class _Newscr1State extends State<Newscr1> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 244, 237, 221),
+        backgroundColor: AppColors.background,
         body: Stack(children: [
           Padding(
             padding: const EdgeInsets.only(
@@ -53,6 +54,28 @@ class _Newscr1State extends State<Newscr1> {
                 height: 16,
               ),
               CustomButton(
+                text: 'Join with email address',
+                textColor: Colors.white,
+                textstyle: Text('Join with email address',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w300,
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                    )),
+                backgroundColor: AppColors.deepRed,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => Signup(),
+                  ));
+                  // Add navigation or functionality here
+                },
+                style: TextStyle(),
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              CustomButton(
                 text: 'Join with phone number',
                 textColor: Colors.white,
                 textstyle: Text('Join with phone number',
@@ -64,25 +87,9 @@ class _Newscr1State extends State<Newscr1> {
                     )),
                 backgroundColor: AppColors.deepRed,
                 onPressed: () {
-                  // Add navigation or functionality here
-                },
-                style: TextStyle(),
-              ),
-              SizedBox(
-                height: 16,
-              ),
-              CustomButton(
-                text: 'Join with email address',
-                textColor: Colors.white,
-                textstyle: Text('Join with email',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w300,
-                      color: Colors.white,
-                      fontFamily: 'Poppins',
-                    )),
-                backgroundColor: AppColors.deepRed,
-                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => Signup(),
+                  ));
                   // Add navigation or functionality here
                 },
                 style: TextStyle(),
